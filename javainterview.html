@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Jai Shree Ram</title>
+      <!--    <style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  padding: 0.25rem;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+    </style> -->
+</head>
+<body>
+   <div class= "wrap"><table border="2" cellpadding="1" cellspacing="1" width="100%">
+    <tr>
+        <td><a href="#java">What is the difference between Java & JavaScript?</a></td>
+        <td><a href="#2">What is JavaScript?</a></td>
+        <td><a href="#3">What are the data types supported by JavaScript?</a></td>
+        <td><a href="#4">What are the features of JavaScript?</a></td>
+        <td><a href="#5">Is JavaScript a case-sensitive language?</a></td>
+        <td><a href="#6">How can you create an object in JavaScript?</a></td>
+        <td><a href="#7">Can you assign an anonymous function to a variable and pass it as an argument to another function?</a></td>
+        <td><a href="#8">What are the scopes of a variable in JavaScript?</a></td>
+        <td><a href="#9">What is the purpose of ‘This’ operator in JavaScript?</a></td>
+        <td><a href="#10">What is Callback?</a></td>
+        <td><a href="#11">What is Closure? </a></td>
+        <td><a href="#12">What is the difference between Attributes and Property?</a></td>
+        <td><a href="#13">What is the difference between Local storage & Session storage?</a></td>
+        <td><a href="#14">What is the difference between null & undefined?</a></td>
+        <td><a href="#15">What is the difference between the operators ‘==‘ & ‘===‘?</a></td></tr><tr>
+        <td><a href="#16">What is the difference between undeclared & undefined?</a></td>
+        <td><a href="#17">What is the difference between innerHTML & innerText?</a></td>
+        <td><a href="#18">What is an event bubbling in JavaScript?</a></td>
+        <td><a href="#19">What is NaN in JavaScript?</a></td>
+        <td><a href="#20">What is difference between document.getElementById() and document.querySelector()?</a></td>
+        <td><a href="#21">When to use reduce(), map(), foreach() and filter() in JavaScript?</a></td>
+        <td><a href="#22">What is Hoisting in JavaScript?</a></td>
+        <td><a href="#23"> How do you clone an object in JavaScript?</a></td>
+        <td><a href="#24"> What are the possible ways to create objects in JavaScript?</a></td>
+        <td><a href="#25"> Q. What is an event flow?</a></td>
+        <td><a href="#26"> Q. What is event capturing</a></td>
+        <td><a href="#27"> Q. What is prototype chain?</a></td>
+        <td><a href="#28"> Q. What is the difference between Call, Apply and Bind?</a></td>
+        <td><a href="#29"> Q. What is a higher order function?</a></td>
+        <td><a href="#30"> Q. What is a unary function?</a></td></tr><tr>
+        <td><a href="#31"> Q. What is a first class function?</a></td>
+        <td><a href="#32"> Q. What is currying function?</a></td>
+        <td><a href="#33"> Q. What is a pure function?</a></td>
+        <td><a href="#34"> Q. What is memoization in JavaScript?</a></td>
+        <td><a href="#35"> Q. What is a post message?</a></td>
+        <td><a href="#36"> Q. What is a web-storage event and its event handler?</a></td>
+        <td><a href="#37"> Q. What are the restrictions of web workers on DOM?</a></td>
+        <td><a href="#38"> Q. What is a promise?</a></td>
+        <td><a href="#39"> Q. What is a callback function?</a></td>
+        <td><a href="#40"> Q. Why do we need callbacks?</a></td>
+        <td><a href="#41"> Q. What is a callback hell?</a></td>
+        <td><a href="#42"> Q.  What is server-sent events?</a></td>
+        <td><a href="#43"> Q.  What is callback in callback?</a></td>
+        <td><a href="#44"> Q.  What is promise chaining?</a></td>
+        <td><a href="#45"> Q. What is promise.all()?</a></td></tr><tr>
+        <td><a href="#46"> Q. What is the difference between null and undefined?</a></td>
+        <td><a href="#47"> Q. What is eval?</a></td>
+        <td><a href="#48"> Q. How do you access history in javascript?</a></td>
+        <td><a href="#49"> Q. What is isNaN?</a></td>
+        <td><a href="#50"> Q. What are the differences between undeclared and undefined variables?</a>
+</td>
+<td><a href="#51"> Q. What is NaN property?</a></td>
+<td><a href="#52"> Q. How do you submit a form using JavaScript?</a></td>
+<td><a href="#53"> Q. How do you find operating system details?</a></td>
+<td><a href="#54"> Q. What is the difference between document load and DOMContentLoaded events?</a></td>
+<td><a href="#55"> Q. What is the difference between native, host and user objects?</a></td>
+<td><a href="#56"> Q. What are the pros and cons of promises over callbacks?</a></td>
+<td><a href="#57"> Q. What is the difference between an attribute and a property?</a></td>
+<td><a href="#58"> Q. What is the purpose of void(0)?</a></td>
+<td><a href="#59"> Q. Is JavaScript a compiled or interpreted language?</a></td>
+<td><a href="#60"> Q. What are events?</a></td></tr><tr>
+<td><a href="#61"> Q. What is BOM?</a></td>
+<td><a href="#62"> Q. What is the use of setTimeout?</a></td>
+<td><a href="#63"> Q. What is the use of setInterval?</a></td>
+<td><a href="#64"> Q. Why is JavaScript treated as Single threaded?</a></td>
+<td><a href="#65"> Q. What is the purpose JSON stringify?</a></td>
+<td><a href="#66"> Q.How do you parse JSON string?</a></td>
+<td><a href="#67"> Q.What is the purpose of clearTimeout method?</a></td>
+<td><a href="#68"> Q.What is a rest parameter?</a></td>
+<td><a href="#69"> Q. How do you determine whether object is frozen or not?</a></td>
+<td><a href="#70"> Q. How do you determine two values same or not using object?</a></td>
+<td><a href="#71"> Q. What are the differences between freeze and seal methods?</a></td>
+<td><a href="#72"> Q. What is the main difference between Object.values and Object.entries method?</a></td>
+<td><a href="#73"> Q. How can you get the list of keys of any object?</a></td>
+<td><a href="#74"> Q.  What is an anonymous function?</a></td>
+<td><a href="#75"> Q.  What is an Iterator?</a></td></tr><tr>
+<td><a href="#76"> Q.  What is a decorator?</a></td>
+<td><a href="#77"> Q.  Explain the difference between synchronous and asynchronous functions?</a></td>
+<td><a href="#78"> Q. What is event loop? What is the difference between call stack and task queue?</a></td>
+<td><a href="#79"> Q. What are the differences between variables created using let, var or const?</a></td>
+<td><a href="#80"> Q. What is the definition of a higher-order function?</a></td>
+<td><a href="#81"> Q. What is “closure” in javascript?</a></td>
+<td><a href="#82"> Q. Can you describe the main difference between a .forEach loop and a .map() loop and why you would pick one versus the other?</a></td>
+<td><a href="#83"> Q.  What is the difference between slice and splice?</a></td>
+<td><a href="#84"> Q.  What is difference between async() or defer() keyword in JavaScript?</a></td>
+<td><a href="#85"> Q.  What is difference between async() and await() in ajax?</a></td>
+<td><a href="#86"> Q.  What is rendering in JavaScript?</a></td>
+<td><a href="#87"> Q.  What is unshift() method in JavaScript?</a></td>
+<td><a href="#88"> Q.  What is callback() function in javascript?</a></td>
+<td><a href="#89"> Q.  Explain array methods [ join(), pop(), push(), shift(), unshift(), concat(), map(), filter(), reduce(), reduceRight(), every(), some(), indexOf(), lastIndexOf(), find(), findIndex(), includes() ]</a></td>
+<td><a href="#90"> Q.  How to avoid callback hell in javascript?</a></td></tr><tr>
+<td><a href="#91"> Q.  What is the difference between encryption and hashing?</a></td>
+<td><a href="#92"> Q.   How do I modify the url without reloading the page?</a></td>
+<td><a href="#93"> Q.   What is throttling and debouncing in javascript?</a></td>
+<td><a href="#94"> Q.   ES6 vs ES5</a></td>
+<td><a href="#95"> Q.   Apply vs Call</a></td>
+<td><a href="#96"> Q.   JavaScript vs JQuery</a></td>
+<td><a href="#97"> Q.   JavaScript vs Node JS</a></td>
+<td><a href="#98"> Q.   JavaScript and AngularJS</a></td>
+<td><a href="#99"> Q.   Bootstrap vs jQuery UI</a></td>
+<td><a href="#100"> Q.  JavaScript and JScript</a></td>
+<td><a href="#101"> Q.   ES6 vs ES5</a>
+</tr>
+</tr>
+</table></div>
+
+
+    
+    <h3 id="java">Java is an OOP programming language.
+        <br>JavaScript is an OOP scripting language
+        <br>Java creates applications that run in a virtual machine or browser.
+        <br>JS code is run on a browser only.
+        <br>Java code needs to be compiled.
+        <br>JS code are all in the form of text.
+    </h3>
+    <h3 id="2">JavaScript is a lightweight, interpreted programming language with object-oriented capabilities that allows you to build interactivity into otherwise static HTML pages. The general-purpose core of the language has been embedded in Netscape, Internet Explorer, and other web browsers.</h3>
+    <h3 id="3">The data types supported by JavaScript are:Undefined,Null,Boolean,String,Symbol,Number,Object</h3>
+    <h3 id="4">Following are the features of JavaScript:<br>
+It is a lightweight, interpreted programming language.<br>
+It is designed for creating network-centric applications.<br>
+It is complementary to and integrated with Java.<br>
+It is an open and cross-platform scripting language.</h3>
+<h3 id="5">Yes, JavaScript is a case sensitive language.  The language keywords, variables, function names, and any other identifiers must always be typed with a consistent capitalization of letters.</h3>
+<h3 id="6">JavaScript supports Object concept very well. You can create an object using the object literal as follows −<br>
+var emp = {
+name: "Daniel",
+age: 23
+};</h3>
+<h3 id="7">Yes! An anonymous function can be assigned to a variable. It can also be passed as an argument to another function.</h3>
+<h3 id="8">Global Variables − A global variable has global scope which means it is visible everywhere in your JavaScript code.
+<br>Local Variables − A local variable will be visible only within a function where it is defined. Function parameters are always local to that function.</h3>
+<h3 id="9">The JavaScript this keyword refers to the object it belongs to. This has different values depending on where it is used. In a method, this refers to the owner object and in a function, this refers to the global object.</h3>
+<h3 id="10">A callback is a plain JavaScript function passed to some method as an argument or option. It is a function that is to be executed after another function has finished executing, hence the name ‘call back‘. In JavaScript, functions are objects. Because of this, functions can take functions as arguments, and can be returned by other functions.</h3>
+
+<h3 id="11">A closure is the combination of a function and the lexical environment within which that function was declared. i.e, It is an inner function that has access to the outer or enclosing function’s variables. The closure has three scope chains<br>
+
+Own scope where variables defined between its curly brackets<br>
+Outer function’s variables<br>
+Global variables</h3>
+<h3 id="12">Attributes-  provide more details on an element like id, type, value etc.
+<br>Property-  is the value assigned to the property like type=”text”, value=’Name’ etc</h3>
+<h3 id="13">Local Storage – The data is not sent back to the server for every HTTP request (HTML, images, JavaScript, CSS, etc) – reducing the amount of traffic between client and server. It will stay until it is manually cleared through settings or program.
+<br>
+Session Storage – It is similar to local storage; the only difference is while data stored in local storage has no expiration time, data stored in session storage gets cleared when the page session ends. Session Storage will leave when the browser is closed.</h3>
+<h3 id="14">Undefined means a variable has been declared but has not yet been assigned a value. On the other hand, null is an assignment value. It can be assigned to a variable as a representation of no value. Also, undefined and null are two distinct types: undefined is a type itself (undefined) while null is an object.</h3>
+<h3 id="15">The main difference between “==” and “===” operator is that formerly compares variable by making type correction e.g. if you compare a number with a string with numeric literal, == allows that, but === doesn’t allow that, because it not only checks the value but also type of two variable, if two variables are not of the same type “===” return false, while “==” return true.</h3>
+<h3 id="16">Undeclared variables are those that do not exist in a program and are not declared. If the program tries to read the value of an undeclared variable, then a runtime error is encountered. Undefined variables are those that are declared in the program but have not been given any value. If the program tries to read the value of an undefined variable, an undefined value is returned.</h3>
+<h3 id="17">innerHTML – It will process an HTML tag if found in a string
+<br>
+innerText – It will not process an HTML tag if found in a string</h3>
+<h3 id="18">Event bubbling is a way of event propagation in the HTML DOM API, when an event occurs in an element inside another element, and both elements have registered a handle for that event. With bubbling, the event is first captured and handled by the innermost element and then propagated to outer elements. The execution starts from that event and goes to its parent element. Then the execution passes to its parent element and so on till the body element.</h3>
+<h3 id="19">NaN is a short form of Not a Number. Since NaN always compares unequal to any number, including NaN, it is usually used to indicate an error condition for a function that should return a valid number. When a string or something else is being converted into a number and that cannot be done, then we get to see NaN.</h3>
+<h3 id="20">document.getElementById()
+Returns an element object representing the element whose id property matches the specified string. Since element IDs are required to be unique if specified, they're a useful way to get access to a specific element quickly.<br>
+document.querySelector()
+Returns the first matching Element node within the node's subtree. If no matching node is found, null is returned.<br>
+document.querySelectorAll()
+Returns a NodeList containing all matching Element nodes within the node's subtree, or an empty NodeList if no matches are found.<br>
+</h3>
+<h3 id="21">forEach()
+It takes a callback function and run that callback function on each element of array one by one.
+
+Basically forEach works as a traditional for loop looping over the array and providing array elements to do operations on them.
+<br>
+var arr = [10, 20, 30];
+<br>
+arr.forEach(function (elem, index){
+   console.log(elem + ' comes at ' + index);
+})
+<br>
+Output
+
+10 comes at 0
+20 comes at 1
+30 comes at 2<br><br>
+filter()<br>
+The main difference between forEach() and filter() is that forEach just loop over the array and executes the callback but filter executes the callback and check its return value. If the value is true element remains in the resulting array but if the return value is false the element will be removed for the resulting array.<br>
+var arr = [10, 20, 30]; <br>
+
+var result = arr.filter(function(elem){<br>
+    return elem !== 20;<br>
+})<br>
+console.log(result)<br>
+Output<br>
+[10,30]<br>
+map()<br>
+map() like filter() & forEach() takes a callback and run it against every element on the array but whats makes it unique is it generate a new array based on your existing array.<br>
+Like filter(), map() also returns an array. The provided callback to map modifies the array elements and save them into the new array upon completion that array get returned as the mapped array.<br>
+var arr = [10, 20, 30];<br>
+
+var mapped = arr.map(function(elem) {<br>
+    return elem * 10;<br>
+});<br>
+console.log(mapped)<br>
+Output<br>
+[100, 200, 300]<br>
+reduce()<br>
+reduce() method of the array object is used to reduce the array to one single value.<br>
+var arr = [10, 20, 30];<br>
+
+var sum = arr.reduce(function(sum, elem) {<br>
+    return sum + elem;<br>
+});<br>
+console.log(sum); // Output: 60<br>
+</h3>
+
+<h3 id="22">Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution.<br>
+All declarations (function, var, let, const and class) are hoisted in JavaScript, while the var declarations are initialized with undefined, but let and const declarations remain uninitialized.
+<br>
+They will only get initialized when their lexical binding (assignment) is evaluated during runtime by the JavaScript engine. This means we can’t access the variable before the engine evaluates its value at the place it was declared in the source code. This is what we call Temporal Dead Zone, A time span between variable creation and its initialization where they can’t be accessed.
+</h3>
+<h3 id="23">Using the object spread operator ..., the object own enumerable properties can be copied into the new object. This creates a shallow clone of the object.<br>
+    const obj = { a: 1, b: 2 }<br>
+const shallowClone = { ...obj }<br>
+Other alternatives include:<br>
+
+JSON.parse(JSON.stringify(obj)) can be used to deep-clone a simple object, but it is CPU-intensive and only accepts valid JSON (therefore it strips functions and does not allow circular references).<br>
+Object.assign({}, obj) is another alternative.<br>
+Object.keys(obj).reduce((acc, key) => (acc[key] = obj[key], acc), {}) is another more verbose alternative that shows the concept in greater depth.<br>
+
+</h3>
+
+<h3 id="24">a) Object constructor:<br>var Object = new Object();<br>
+b) Object create method:<br>var Object=Object.create(null);<br>
+c) Object literal syntax:<br>var object={};<br>
+d)  Function constructor:<br>function Person(name){<br>
+    var object = {};<br>
+    object.name = name;<br>
+    object.age = 26;<br>
+    return object;
+}
+var object =new Person("Alex")<br>
+e) Function constructor with prototype:<br>
+function Person(){}<br>
+Person.prototype.name = "Alex";<br>
+var object = new Person();<br>
+This is equivalent to an instance created with an object create method with a function prototype and then call that function with an instance and parameters as arguments.<br>
+function func {};<br>
+
+new func(x, y, z);<br>
+
+// **(OR)**<br>
+
+// Create a new instance using function prototype.<br>
+var newInstance = Object.create(func.prototype)<br>
+
+// Call the function<br>
+var result = func.call(newInstance, x, y, z),<br>
+
+// If the result is a non-null object then use it otherwise just use the new instance.<br>
+console.log(result && typeof result === 'object' ? result : newInstance);<br>
+f.) ES6 Class syntax: <br>
+class Person {<br>
+ constructor(name) {<br>
+    this.name = name;<br>
+ }<br>
+}<br>
+
+var object = new Person("Alex");<br>
+g.) Singleton pattern: <br>
+var object = new function() {<br>
+  this.name = "Alex";<br>
+}<br>
+
+</h3>
+<h3 id="25">Event flow is the order in which event is received on the web page. When you click an element that is nested in various other elements, before your click actually reaches its destination, or target element, it must trigger the click event each of its parent elements first, starting at the top with the global window object.
+
+There are two ways of event flow<br>
+
+Top to Bottom(Event Capturing)<br>
+Bottom to Top (Event Bubbling)
+</h3>
+<h3 id="26">Event capturing is a type of event propagation where the event is first captured by the outermost element and then successively triggers on the descendants (children) of the target element in the same nesting hierarchy till it reaches the inner DOM element.</h3>
+<h3 id="27">Nearly all objects in JavaScript are instances of Object. That means all the objects in JavaScript inherit the properties and methods from Object.prototype. This is called Prototype chaining.</h3>
+<h3 id="28">a.) call()
+
+The call() method invokes a function with a given this value and arguments provided one by one<br>
+b.) apply()
+
+Invokes the function and allows you to pass in arguments as an array<br>
+c.) bind()
+
+returns a new function, allowing you to pass in an array and any number of arguments<br>
+</h3>
+<h3 id="29">A Higher-Order function is a function that receives a function as an argument or returns the function as output.<br>
+
+For example, Array.prototype.map(), Array.prototype.filter() and Array.prototype.reduce() are some of the Higher-Order functions in javascript.</h3>
+
+<h3 id="30">Unary function (i.e. monadic) is a function that accepts exactly one argument. Let us take an example of unary function. It stands for single argument accepted by a function.</h3>
+
+<h3 id="31">JavaScript functions are first-class functions meaning functions and objects are treated as the same thing. Functions can be stored as a variable inside an object or an array as well as it can be passed as an argument or be returned by another function. That makes function "first-class citizens in JavaScript"</h3>
+<h3 id="32">Currying is the process of taking a function with multiple arguments and turning it into a sequence of functions each with only a single argument.
+    Curried functions are great to improve code re-usability and functional composition.
+</h3>
+<h3 id="33">Pure functions are functions that accept an input and returns a value without modifying any data outside its scope(Side Effects). Its output or return value must depend on the input/arguments and pure functions must return a value.</h3>
+<h3 id="34">Memoization is a programming technique which attempts to increase a function’s performance by caching its previously computed results. Each time a memoized function is called, its parameters are used to index the cache. If the data is present, then it can be returned, without executing the entire function. Otherwise the function is executed and then the result is added to the cache.</h3>
+<h3 id="35">Post message is a method that enables cross-origin communication between Window objects.(i.e, between a page and a pop-up that it spawned, or between a page and an iframe embedded within it). Generally, scripts on different pages are allowed to access each other if and only if the pages follow same-origin policy(i.e, pages share the same protocol, port number, and host).</h3>
+<h3 id="36">The StorageEvent is an event that fires when a storage area has been changed in the context of another document. Whereas onstorage property is an EventHandler for processing storage events.</h3>
+<h3 id="37">WebWorkers do not have access to below javascript objects since they are defined in an external files<br>
+
+Window object<br>
+Document object<br>
+Parent object</h3>
+<h3 id="38">A promise is an object that may produce a single value some time in the future with either a resolved value or a reason that it’s not resolved(for example, network error). It will be in one of the 3 possible states: fulfilled, rejected, or pending. Syntax<br>
+
+const promise = new Promise(function(resolve, reject) {<br>
+  // promise description<br>
+})<br>
+Promises are used to handle asynchronous operations. They provide an alternative approach for callbacks by reducing the callback hell and writing the cleaner code.<br>
+
+Promises have three states:<br>
+
+Pending: This is an initial state of the Promise before an operation begins<br>
+Fulfilled: This state indicates that specified operation was completed.<br>
+Rejected: This state indicates that the operation did not complete. In this case an error value will be thrown.</h3>
+<h3 id="39">A callback function is a function passed into another function as an argument. This function is invoked inside the outer function to complete an action.<br>
+
+function callbackFunction(name) {<br>
+  console.log('Hello ' + name);<br>
+}<br>
+
+function outerFunction(callback) {<br>
+  let name = prompt('Please enter your name.');<br>
+  callback(name);<br>
+}<br>
+
+outerFunction(callbackFunction);</h3>
+<h3 id="40">The callbacks are needed because javascript is a event driven language. That means instead of waiting for a response javascript will keep executing while listening for other events.</h3>
+<h3 id="41">Callback Hell is an anti-pattern with multiple nested callbacks which makes code hard to read and debug when dealing with asynchronous logic.</h3>
+<h3 id="42">Server-sent events (SSE) is a server push technology enabling a browser to receive automatic updates from a server via HTTP connection without resorting to polling. These are a one way communications channel - events flow from server to client only. This is been used in Facebook/Twitter updates, stock price updates, news feeds etc.</h3>
+<h3 id="43">You can nest one callback inside in another callback to execute the actions sequentially one by one. This is known as callbacks in callbacks.</h3>
+<h3 id="44">The process of executing a sequence of asynchronous tasks one after another using promises is known as Promise chaining.</h3>
+<h3 id="45">Promise.all is a promise that takes an array of promises as an input (an iterable), and it gets resolved when all the promises get resolved or any one of them gets rejected.</h3>
+<h3 id="46">Null<br>It is an assignment value which indicates that variable points to no object.<br>
+    Type of null is object<br>
+    The null value is a primitive value that represents the null, empty, or non-existent reference.<br>
+    Indicates the absence of a value for a variable<br>
+    Converted to zero (0) while performing primitive operations<br>
+    Undefined<br>
+    It is not an assignment value where a variable has been declared but has not yet been assigned a value.<br>
+    Type of undefined is undefined<br>
+    The undefined value is a primitive value used when a variable has not been assigned a value.<br>
+    Indicates absence of variable itself<br>
+    Converted to NaN while performing primitive operations<br>
+</h3>
+<h3 id="47">The eval() function evaluates JavaScript code represented as a string. The string can be a JavaScript expression, variable, statement, or sequence of statements.</h3>
+<h3 id="48">The window.history object contains the browsers history. You can load previous and next URLs in the history using back() and next() methods.</h3>
+<h3 id="49">The isNaN() function is used to determine whether a value is an illegal number (Not-a-Number) or not. i.e, This function returns true if the value equates to NaN. Otherwise it returns false.</h3>
+<h3 id="50">undeclared<br>
+    These variables do not exist in a program and are not declared<br>
+    If you try to read the value of an undeclared variable, then a runtime error is encountered<br>
+    undefined<br>
+    These variables declared in the program but have not assigned any value<br>
+    If you try to read the value of an undefined variable, an undefined value is returned.<br>
+</h3>
+<h3 id="51">The NaN property is a global property that represents "Not-a-Number" value. i.e, It indicates that a value is not a legal number. It is very rare to use NaN in a program but it can be used as return value for few cases</h3>
+<h3 id="52">You can submit a form using JavaScript use document.form[0].submit(). All the form input information is submitted using onsubmit event handler<br>
+function submit() {<br>
+    document.form[0].submit();<br>
+}<br>
+</h3>
+<h3 id="53">The window.navigator object contains information about the visitor's browser os details. Some of the OS properties are available under platform property,<br>
+
+console.log(navigator.platform);</h3>
+<h3 id="54">The DOMContentLoaded event is fired when the initial HTML document has been completely loaded and parsed, without waiting for assets(stylesheets, images, and subframes) to finish loading. Whereas The load event is fired when the whole page has loaded, including all dependent resources(stylesheets, images).</h3>
+<h3 id="55">Native objects are objects that are part of the JavaScript language defined by the ECMAScript specification. For example, String, Math, RegExp, Object, Function etc core objects defined in the ECMAScript spec.<br>
+Host objects are objects provided by the browser or runtime environment (Node). For example, window, XmlHttpRequest, DOM nodes etc considered as host objects.<br>
+User objects are objects defined in the javascript code. For example, User object created for profile information.
+</h3>
+<h3 id="56">Pros:<br>
+
+It avoids callback hell which is unreadable<br>
+Easy to write sequential asynchronous code with .then()<br>
+Easy to write parallel asynchronous code with Promise.all()<br>
+Solves some of the common problems of callbacks(call the callback too late, too early, many times and swallow errors/exceptions)<br>
+Cons:<br>
+
+It makes little complex code<br>
+You need to load a polyfill if ES6 is not supported<br>
+</h3>
+<h3 id="57">Attributes are defined on the HTML markup whereas properties are defined on the DOM.
+</h3>
+<h3 id="58">The void(0) is used to prevent the page from refreshing. This will be helpful to eliminate the unwanted side-effect, because it will return the undefined primitive value. It is commonly used for HTML document that uses href="JavaScript:void(0);" within an <a> element. i.e, when you click a link, the browser loads a new page or refreshes the same page. But this behavior will be prevented using this expression.
+</h3>
+<h3 id="59">JavaScript is an interpreted language, not a compiled language. An interpreter in the browser reads over the JavaScript code, interprets each line, and runs it. Nowadays modern browsers use a technology known as Just-In-Time (JIT) compilation, which compiles JavaScript to executable bytecode just as it is about to run.
+</h3>
+<h3 id="60">Events are "things" that happen to HTML elements. When JavaScript is used in HTML pages, JavaScript can react on these events. Some of the examples of HTML events are,<br>
+
+Web page has finished loading<br>
+Input field was changed<br>
+Button was clicked
+</h3>
+<h3 id="61">The Browser Object Model (BOM) allows JavaScript to "talk to" the browser. It consists of the objects navigator, history, screen, location and document which are children of window. The Browser Object Model is not standardized and can change based on different browsers.
+</h3>
+<h3 id="62">The setTimeout() method is used to call a function or evaluates an expression after a specified number of milliseconds.
+</h3>
+<h3 id="63">The setInterval() method is used to call a function or evaluates an expression at specified intervals (in milliseconds).
+</h3>
+<h3 id="64">JavaScript is a single-threaded language. Because the language specification does not allow the programmer to write code so that the interpreter can run parts of it in parallel in multiple threads or processes. Whereas languages like java, go, C++ can make multi-threaded and multi-process programs.
+</h3>
+<h3 id="65">When sending data to a web server, the data has to be in a string format. You can achieve this by converting JSON object into a string using stringify() method.
+</h3>
+<h3 id="66">When receiving the data from a web server, the data is always in a string format. But you can convert this string value to javascript object using parse() method.
+<h3 id="67">The clearTimeout() function is used in javascript to clear the timeout which has been set by setTimeout() function before that. i.e, The return value of setTimeout() function is stored in a variable and it’s passed into the clearTimeout() function to clear the timer. 
+</h3>
+<h3 id="68">Rest parameter is an improved way to handle function parameter which allows us to represent an indefinite number of arguments as an array.<br>
+    function total(…args) {<br>
+  let sum = 0;<br>
+  for(let i of args) {<br>
+    sum+=i;<br>
+  }<br>
+ return sum;<br>
+}<br>
+console.log(fun(1,2)); //3<br>
+console.log(fun(1,2,3)); //6<br>
+console.log(fun(1,2,3,4)); //13<br>
+console.log(fun(1,2,3,4,5)); //15<br>
+</h3>
+<h3 id="69">Object.isFrozen() method is used to determine if an object is frozen or not. An object is frozen if all of the below conditions hold true,<br>
+
+If it is not extensible.<br>
+If all of its properties are non-configurable.<br>
+If all its data properties are non-writable.</h3>
+<h3 id="70">The Object.is() method determines whether two values are the same value. <br>
+
+Two values are the same if one of the following holds:<br>
+both undefined<br>
+both null<br>
+both true or both false<br>
+both strings of the same length with the same characters in the same order<br>
+both the same object (means both object have same reference)<br>
+both numbers and both +0 both -0 both NaN both non-zero and both not NaN and both have the same value
+</h3>
+<h3 id="71">If an object is frozen using the Object.freeze() method then its properties become immutable and no changes can be made in them whereas if an object is sealed using the Object.seal() method then the changes can be made in the existing properties of the object.</h3>
+<h3 id="72">The Object.values() method's behavior is similar to Object.entries() method but it returns an array of values instead [key,value] pairs.</h3>
+<h3 id="73"> You can use Object.keys() method which is used return an array of a given object's own property names, in the same order as we get with a normal loop.</h3>
+<h3 id="74"> An anonymous function is a function without a name! Anonymous functions are commonly assigned to a variable name or used as a callback function.</h3>
+<h3 id="75"> An iterator is an object which defines a sequence and a return value upon its termination. It implements the Iterator protocol with a next() method which returns an object with two properties: value (the next value in the sequence) and done (which is true if the last value in the sequence has been consumed).</h3>
+<h3 id="76"> A decorator is an expression that evaluates to a function and that takes the target, name, and decorator descriptor as arguments. Also, it optionally returns a decorator descriptor to install on the target object.</h3>
+<h3 id="77"> Synchronous functions are blocking while asynchronous functions are not. In synchronous functions, statements complete before the next statement is run. In this case, the program is evaluated exactly in order of the statements and execution of the program is paused if one of the statements take a very long time.
+
+Asynchronous functions usually accept a callback as a parameter and execution continue on the next line immediately after the asynchronous function is invoked. The callback is only invoked when the asynchronous operation is complete and the call stack is empty. Heavy duty operations such as loading data from a web server or querying a database should be done asynchronously so that the main thread can continue executing other operations instead of blocking until that long operation to complete (in the case of browsers, the UI will freeze).</h3>
+<h3 id="78">The event loop is a single-threaded loop that monitors the call stack and checks if there is any work to be done in the task queue. If the call stack is empty and there are callback functions in the task queue, a function is dequeued and pushed onto the call stack to be executed.</h3>
+<h3 id="79">Variables declared using the var keyword are scoped to the function in which they are created, or if created outside of any function, to the global object. let and const are block scoped, meaning they are only accessible within the nearest set of curly braces (function, if-else block, or for-loop).<br>
+var allows variables to be hoisted, meaning they can be referenced in code before they are declared. let and const will not allow this, instead throwing an error.<br>
+Redeclaring a variable with var will not throw an error, but 'let' and 'const' will.<br>
+let and const differ in that let allows reassigning the variable's value while const does not.</h3>
+<h3 id="80">A higher-order function is any function that takes one or more functions as arguments, which it uses to operate on some data, and/or returns a function as a result. Higher-order functions are meant to abstract some operation that is performed repeatedly. The classic example of this is map, which takes an array and a function as arguments. map then uses this function to transform each item in the array, returning a new array with the transformed data. Other popular examples in JavaScript are forEach, filter, and reduce. A higher-order function doesn't just need to be manipulating arrays as there are many use cases for returning a function from another function. Function.prototype.bind is one such example in JavaScript.</h3>
+<h3 id="81">A closure is a function defined inside another function (called parent function) and has access to the variable which is declared and defined in parent function scope.<br>
+
+The closure has access to the variable in three scopes:<br>
+
+Variable declared in his own scope<br>
+Variable declared in parent function scope<br>
+Variable declared in the global namespace</h3>
+<h3 id="82">forEach<br>
+
+The closure has access to the variable in three scopes:<br>
+
+Iterates through the elements in an array.<br>
+Executes a callback for each element.<br>
+Does not return a value.<br>
+map<br>
+Iterates through the elements in an array.<br>
+"Maps" each element to a new element by calling the function on each element, creating a new array as a result.<br>
+The main difference between .forEach and .map() is that .map() returns a new array. If you need the result, but do not wish to mutate the original array, .map() is the clear choice. If you simply need to iterate over an array, forEach is a fine choice.<br>
+</h3>
+<h3 id="83">Slice<br>
+
+Doesn't modify the original array(immutable)<br>
+
+Returns the subset of original array<br>
+Used to pick the elements from array<br>
+Splice<br>
+Modifies the original array(mutable)<br>
+Returns the deleted elements as array<br>
+Used to insert or delete elements to/from array<br>
+</h3>
+<h3 id="84">The async() Attribute
+The async attribute is used to indicate to the browser that the script file can be executed asynchronously. The HTML parser does not need to pause at the point it reaches the script tag to fetch and execute, the execution can happen whenever the script becomes ready after being fetched in parallel with the document parsing.
+<br>
+script async src="script.js"<br>
+The defer() Attribute<br>
+The defer attribute tells the browser to only execute the script file once the HTML document has been fully parsed.<br>
+
+script defer src="script.js"</h3>
+<h3 id="85">When an async() function is called, it returns a Promise. When the async() function returns a value, the Promise will be resolved with the returned value. When the async() function throws an exception or some value, the Promise will be rejected with the thrown value.<br>
+    An async function can contain an await() expression, which pauses the execution of the async() function and waits for the passed Promise's resolution, and then resumes the async() function's execution and returns the resolved value.
+    </h3>
+<h3 id="86">JavaScript-powered content needs to be rendered before it can output meaningful code and be displayed for the client. These are the different steps involved in the JavaScript rendering process:<br>
+
+JavaScript Rendering Process<br>
+
+JavaScript: Typically JavaScript is used to handle work that will result in visual changes.<br>
+Style calculations: This is the process of figuring out which CSS rules apply to which elements. They are applied and the final styles for each element are calculated.<br>
+Layout: Once the browser knows which rules apply to an element it can begin to calculate how much space it takes up and where it is on screen.<br>
+Paint: Painting is the process of filling in pixels. It involves drawing out text, colors, images, borders, and shadows, essentially every visual part of the elements.<br>
+Compositing: Since the parts of the page were drawn into potentially multiple layers they need to be drawn to the screen in the correct order so that the page renders correctly.<br>
+The main responsibility of the rendering engine is to display the requested page on the browser screen. Rendering engines can display HTML and XML documents and images.</h3>
+
+<h3 id="87">The unshift() method adds one or more elements to the beginning of an array and returns the new length of the array.</h3>
+<h3 id="88">A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.</h3>
+<h3 id="89">a.) array.join(): The join() method creates and returns a new string by concatenating all of the elements in an array (or an array-like object), separated by commas or a specified separator string. If the array has only one item, then that item will be returned without using the separator.<br>
+b.) array.pop(): The pop() method removes the last element from an array and returns that element. This method changes the length of the array.<br>
+c.) array.push(): The push() method adds one or more elements to the end of an array and returns the new length of the array.<br>
+d.) array.shift(): The shift() method removes the first element from an array and returns that removed element. This method changes the length of the array.<br>
+e.) array.unshift(): The unshift() method adds one or more elements to the beginning of an array and returns the new length of the array.<br>
+f.) array.concat(): The concat() method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.<br>
+g.) array.map(): The map() method creates a new array with the results of calling a provided function on every element in the calling array.<br>
+h.) array.filter(): The filter() method creates a new array with all elements that pass the test implemented by the provided function.<br>
+i.) array.reduce(): The reduce() method executes a reducer function (that you provide) on each element of the array, resulting in a single output value.<br>
+j.) array.reduceRight(): The reduceRight() method applies a function against an accumulator and each value of the array (from right-to-left) to reduce it to a single value.<br>
+k.) array.every(): The every() method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.<br>
+l.) array.some(): The some() method tests whether at least one element in the array passes the test implemented by the provided function. It returns a Boolean value.<br>
+m.) array.indexOf(): The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present.<br>
+n.) array.lastIndexOf(): The lastIndexOf() method returns the index within the calling String object of the last occurrence of the specified value, searching backwards from fromIndex. Returns -1 if the value is not found.<br>
+o.) array.find(): The find() method returns the value of the first element in the provided array that satisfies the provided testing function.<br>
+p.) array.findIndex(): The findIndex() method returns the index of the first element in the array that satisfies the provided testing function. Otherwise, it returns -1, indicating that no element passed the test.<br>
+q.) array.includes(): The includes() method determines whether an array includes a certain value among its entries, returning true or false as appropriate.<br>
+
+</h3>
+<h3 id="90">Callback hell is a phenomenon that afflicts a JavaScript developer when he tries to execute multiple asynchronous operations one after the other. Some people call it to be the pyramid of doom.<br>
+    Techniques for avoiding callback hell<br>
+
+Write comments<br>
+Split functions into smaller functions<br>
+Using Async.js<br>
+Using Promises<br>
+Using Async-Await<br>
+</h3>
+<h3 id="91">Encryption<br>
+Encryption is the process of encoding simple text and other information that can be accessed by the sole authorized entity if it has a decryption key. It will protect your sensitive data from being accessed by cyber criminals. It is the most effective way of achieving data security in modern communication systems. There are a number of encryption systems, where an asymmetric encryption is also known as public-key encryption, symmetric encryption and hybrid encryption are the most common.<br>
+
+Symmetric encryption – Uses the same secret key to encrypt and decrypt the message. The secret key can be a word, a number or a string of random letters. Both the sender and the receiver should have the key. It is the oldest technique of encryption.<br>
+Asymmetric encryption – It deploys two keys, a public key known by everyone and a private key known only by the receiver. The public key is used to encrypt the message and a private key is used to decrypt it. Asymmetric encryption is little slower than symmetric encryption and consumes more processing power when encrypting data.<br>
+Hybrid encryption – It is a process of encryption that blends both symmetric and asymmetric encryption. It takes advantage of the strengths of the two encryptions and minimizes their weakness.<br>
+Purpose of encryption<br>
+
+Confidentiality – Encrypted message cannot be read or changed by another person.<br>
+Encrypt – It transforms data in such a way that only specific individuals can transform the message.<br>
+Granular access control – Users are limited to what they can see and do.<br>
+It makes auditing for accountability easy. In the case of message leaked, it is easy to trace who did that and when thus security breaches can be sorted out efficiently.<br>
+Authentication – the origin of the message received can be traced thus facilitating authentication.<br>
+Hashing<br>
+In hashing, data is converted to the hash using some hashing function, which can be any number generated from string or text. Various hashing algorithms are MD5, SHA256. Data once hashed is non-reversible.<br>
+
+Hash function can be any function that is used to map data of arbitrary size to data of fixed size. The data structure hash table is used for storing of data.<br>
+
+For example: When images are sent to different server and text is sent to a different server for efficiency purposes. So for verifying images that the images are not tampered in between data transfer over the internet, hashing algorithm like MD5(), SHA() algorithm can be used.<br>
+
+Purpose of hashing<br>
+
+Hashing can be used to compare a large amount of data. Hash values can be created for different data, meaning that it is easier comparing hashes than the data itself.<br>
+It is easy to find a record when the data is hashed.<br>
+Hashing algorithms are used in cryptographic applications like a digital signature.<br>
+Hashing is used to generate random strings to avoid duplication of data stored in databases.<br>
+Geometric hashing – widely used in computer graphics to find closet pairs and proximity problems in planes. It is also called grid method and it has also been adopted in telecommunications.</h3>
+<h3 id="92">The window.location.url property will be helpful to modify the url but it reloads the page. HTML5 introduced the history.pushState() and history.replaceState() methods, which allow you to add and modify history entries.</h3>
+<h3 id="93">Debouncing and throttling techniques are used to limit the number of times a function can execute. These are two widely-used techniques to improve the performance of code that gets executed repeatedly within a period of time.<br>
+
+Throttling enforces a maximum number of times a function can be called over time. As in "execute this function at most once every 100 milliseconds."<br>
+Debouncing enforces that a function not be called again until a certain amount of time has passed without it being called. As in "execute this function only if 100 milliseconds have passed without it being called."</h3>
+<h3 id="94">Definition:<br>
+ES6: ECMA script is basically a trademarked scripting language specification defined by Ecma international.The sixth edition of the same is known as ES6.<br>
+ES5: ECMA script is a trademarked scripting language specification defined by ema international. The fifth edition of the same is known as ES5.<br>
+Using Arrow Functions<br>
+ES6: function keyword need not to be used to defined the function and also the return keyword can e avoided to fetch the computed value.<br>
+ES5: function keyword need to be used to define the functions.<br>
+Object Manipulation<br>
+ES6: Object manipulation can be processed more smoothly.(due to the presence of destructuring, speed operators) than its previous versions.<br>
+ES5: also provides the same features but it's a bit more time consuming than that of ES6.<br>
+Performance<br>
+ES6: With the help of newly implemented features and shorthand storage implementation, ES6 scores a higher performance rank than ES5. <br>
+ES5: due to the non-presence of a few features, its performance is a bit less than that of ES6 <br>
+Support<br>
+ES6: There is also a lot of community support for ES6. However, it is lesser than that of ES5. <br>
+ES5: ES5 provide a larger range of community supports than that of ES6<br>
+</h3>
+<h3 id="100">JavaScript vs JScript Comparison<br>
+Type:<br>
+Javascript: It is a scripting language. <br>
+JScript: JScript is also a scripting language owned by Microsoft. <br>
+Verbosity/Simplicity<br>
+Javascript: With JavaScript, one needs to write scripts manually which is time-consuming. <br>
+JScript: JScript is the same as JavaScript in this context <br>
+Browser Compatibility: With JavaScript, one needs to handle multiple browser compatibility by writing code.<br>
+Javascript:With JavaScript, one needs to handle multiple browser compatibility by writing code. <br>
+JScript:JScript is only supported by Microsoft’s Internet Explorer. <br>
+Compilation:<br>
+Javascript:We need not compile JavaScript codes. Our browsers run them. <br>
+JScript: Codes are written in JScript support conditional compilation. With this, we can place codes in block comments and execute them selectively. Starting from Microsoft Internet Explorer 11, conditional compilation is no longer supported <br>
+Active Content Creation<br>
+Javascript: We can simply write JavaScript codes inside the script tag in HTML. We write JavaScript codes in OBSL syntax (Object Based Script language) <br>
+JScript: Same goes for JScript. Here also we write the syntax same as JavaScript. <br>
+Speed:<br>
+Javascript: JavaScript is fast. <br>
+JScript: JScript is also fast. <br>
+Client Side/Server Side Language:<br>
+Javascript: Commonly used on Client Side. <br>
+JScript: Commonly used on Client Side. <br>
+Type: Object Access<br>
+Javascript: 	JavaScript cannot access web browser objects. <br>
+JScript: JScript can access objects exposed by Internet Explorer. An example of such an object is ActiveX. <br>
+</h3>
+<h3 id="99">Bootstrap vs jQuery UI
+    type:Development <br>
+    Bootstrap:Developed by Twitter <br>
+    jQuery: Developed by jQuery Project Group <br>
+    type: Functionality <br>
+    Bootstrap: 	Focus on design and appearance <br>
+    jQuery:Provide pre-written functions to enhance the functionality  <br>
+    type: Purpose <br>
+    Bootstrap: Mainly a CSS framework <br>
+    jQuery: Make it easier to use JavaScript <br>
+    type: Market <br>
+    Bootstrap: Bootstrap is still behind jQuery in market share<br>
+    jQuery: jQuery is leading on the web front, with top sites <br>
+    type: Customization <br>
+    Bootstrap:It can be customized in a variety of ways by overriding the default CSS <br>
+    jQuery: Existing functions can be overridden to provide new functionality<br>
+    type: Orientation <br>
+    Bootstrap: Highly oriented toward responsiveness<br>
+    jQuery:jQuery responsive nature is less sophisticated than Bootstrap <br>
+    type:Written-in <br>
+    Bootstrap:Written using HTML, CSS, JavaScript, Less, Sass <br>
+    jQuery:Written using JavaScript <br>
+    type:Release <br>
+    Bootstrap: the First release on August 26, 2011, <br>
+    jQuery:Written using JavaScript <br>
+</h3>
+<h3 id="98">JavaScript and AngularJS<br>
+    Type: Definition  <br>
+    JavaScript: 	JavaScript is an object-oriented scripting language. <br>
+    AngularJS: AngularJS is an open-source framework for creating dynamic web applications. <br>
+    Type: Programmed <br>
+    JavaScript: JavaScript most interpreters are written in C and C++  <br>
+    AngularJS: AngularJS is written in JavaScript. <br>
+    Type: Applications <br>
+    JavaScript: JavaScript used for creating dynamic web applications.  <br>
+    AngularJS: AngularJS used for creating large single-page applications. <br>
+    Type: Developed <br>
+    JavaScript: 	It was mainly developed by Netscape Communications.  <br>
+    AngularJS: It was mainly developed by Google. <br>
+    Type:Concept <br>
+    JavaScript: 	JavaScript-based on the concept of dynamic typing as an interpreted language <br>
+    AngularJS: It is based on the concept of a model view controller to build apps. <br>
+    Type: Syntax <br>
+    JavaScript: JavaScript syntax is complex as compared to AngularJS. <br>
+    AngularJS: AngularJS syntax is simple. <br>
+    Type: Learn ability <br>
+    JavaScript: JavaScript is complex to learn.  <br>
+    AngularJS: AngularJS can learn easily if one knows JavaScript. <br>
+    Type: Filters <br>
+    JavaScript:  JavaScript does not support filters.  <br>
+    AngularJS: 	AngularJS does support filters. <br>
+</h3>
+<h3 id="97">JavaScript vs Node JS: <br>
+type: <br>
+JavaScript: JavaScript is a programming language. It is running in any web browser with a proper browser engine. <br>
+NodeJs: It is an interpreter and environment for JavaScript with some specific useful libraries which JavaScript programming can use separately. <br>
+Utility: <br>
+JavaScript:Mainly using for any client-side activity for a web application, like possible attribute validation or refreshing the page in a specific interval or provide some dynamic changes in web pages without refreshing the page. <br>
+NodeJs: It mainly used for accessing or performing any non-blocking operation of any operating system, like creating or executing a shell script or accessing any hardware-specific information or running any backend job. <br>
+Running Engine: <br>
+JavaScript:  JavaScript running any engine like Spider monkey (FireFox), JavaScript Core (Safari), V8 (Google Chrome). <br>
+NodeJs: Node JS only run in a V8 engine which mainly used by google chrome. And javascript program which will be written under this Node JS will be always run in V8 Engine. <br>
+</h3>
+<h3 id="95">Apply vs Call: <br>
+Type: Definition <br>
+Apply: JavaScript Apply function used to borrow functions and to set this value. <br>
+Call: JavaScript call function is derived from borrowing and invoking functions. <br>
+Type: Arguments  <br>
+Apply: JavaScript Apply function takes the arguments as an Array.  <br>
+Call: JavaScript Call function takes the arguments separately.  <br>
+Type: Adding Elements <br>
+Apply: In JavaScript Apply, elements can be further added to another array.  <br>
+Call: In the Call function, we have to add an element to the list only. <br>
+Type: Built-in function  <br>
+Apply: In Javascript, the Apply method can use the built-in function like min and max functions. <br>
+Call: In the call function, the built-in functions cannot be used. <br>
+Type: Constructor <br>
+Apply: Apply function can be used for chain constructors for an object. <br>
+Call: The call function does not have this feature. <br>
+Type: Variadic Functions <br>
+Apply: Apply function able to use variadic functions <br>
+Call: Call function not able to use. <br>
+</h3>
+<h3 id="96">JavaScript vs JQuery <br>
+    type: <br>
+    JavaScript: 	It is a programming language. <br>
+    JQuery: It is an API (application programming interface.) <br>
+    type: Language <br>
+    JavaScript: It is written in C. It is an interpreted language. <br>
+    JQuery: Uses resources given by JavaScript to make things easier. <br>
+    type: Verbosity/Simplicity <br>
+    JavaScript: With JavaScript, one needs to write their own scripting, which is time-consuming. <br>
+    JQuery: With JQuery, one need not write much as scripting already exists. <br>
+    type: Compatibility <br>
+    JavaScript: With JavaScript, one needs to handle multiple- browser compatibilities by writing their own code.  <br>
+    JQuery: With JQuery, as we all know that it is a multi-browser library.  <br>
+    type: Length of Code <br>
+    JavaScript: With JavaScript, one has to write more lines of code. <br>
+    JQuery: With JQuery, one has to write fewer lines of code than JavaScript. <br>
+    type: Speed <br>
+    JavaScript:Pure JavaScript is faster in accessing DOM (document object model.) as it cut the overhead which JQuery has.  <br>
+    JQuery: JQuery is also fast with modern browsers and modern computers. Suited for complex operations where developer are prone to mistakes and writing poor lines of code <br>
+    type: Client-Side/Server Side Language  <br>
+    JavaScript: Commonly used on Client-Side<br>
+    JQuery: Same for JQuery, it is also commonly used on the Client Side. <br>
+    type:Light/Heavy Weight <br>
+    JavaScript:Other than raw JavaScript, it is heavier than JQuery.  <br>
+    JQuery: It is lightweight as compared to other JavaScript libraries  <br>
+
+</h3>
+
+
+
+</body>
+
+</html>
